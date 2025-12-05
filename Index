@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>يونس نور — تواصل</title>
+
+  <!-- SEO -->
+  <meta name="description" content="صفحة التواصل الخاصة بي يونس نور — رقم جوال وطرق الاتصال السريعة">
+  <link rel="canonical" href="https://younesnour.github.io/">
+
+  <!-- Open Graph (مشاركة أفضل على واتساب/فيسبوك) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="يونس نور — تواصل">
+  <meta property="og:description" content="تواصل معي مباشرة عبر الجوال أو البريد الإلكتروني.">
+  <meta property="og:url" content="https://younesnour.github.io/">
+
+  <style>
+    body{font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:20px; background:#f7f7f8; color:#111}
+    .card{max-width:760px;margin:40px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.06)}
+    h1{margin:0 0 8px;font-size:28px}
+    p{margin:8px 0;font-size:16px}
+    .big{font-size:20px;font-weight:700}
+    .muted{color:#555}
+    .actions{margin-top:18px}
+    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid #e0e0e0}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <h1>مرحباً — يونس نور</h1>
+    <p class="muted">هذه صفحة التواصل السريع الخاصة بي. أستخدمها لعرض اسمي ورقم جوالي علنياً.</p>
+
+    <section aria-labelledby="contact">
+      <h2 id="contact" class="big">للتواصل المباشر</h2>
+      <p>📞 <strong>الجوال:</strong> <span id="phone">+966 55 500 0000</span></p>
+      <p>💬 واتساب: اضغط الرابط لفتح المحادثة مباشرة</p>
+      <p class="actions">
+        <a class="btn" id="whatsapp" href="https://wa.me/966534741662" target="_blank" rel="noopener">افتح واتساب</a>
+        <a class="btn" id="call" href="tel:+966595908081">اتصال مباشر</a>
+      </p>
+      <p>📧 <strong>البريد:</strong> <a href="mailto:example@email.com">example@email.com</a></p>
+    </section>
+
+    <hr>
+
+    <section aria-labelledby="about">
+      <h3 id="about">نبذة سريعة</h3>
+      <p class="muted">أنا متاح للرد على الرسائل حول الخدمات، التعاون، والاستفسارات البسيطة.</p>
+    </section>
+
+    <footer style="margin-top:20px;font-size:13px;color:#777">
+      تم إنشاء هذه الصفحة بواسطة GitHub Pages — يمكنك تغيير المحتوى في أي وقت عبر رفع تعديل للمستودع.
+    </footer>
+  </main>
+
+  <!-- ملاحظة: حدّث أرقام الروابط (wa.me و tel) لتطابق رقمك بدون فواصل -->
+</body>
+</html>
