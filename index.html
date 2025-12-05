@@ -1,55 +1,150 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>يونس نور — تواصل</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>عيادة السن الرقمي — تواصل وحجز مواعيد</title>
 
-  <!-- SEO -->
-  <meta name="description" content="صفحة التواصل الخاصة بي يونس نور — رقم جوال وطرق الاتصال السريعة">
-  <link rel="canonical" href="https://younesnour.github.io/">
+  <meta name="description" content="تواصل مع عيادة السن الرقمي — رقم واتساب الطبيب، هاتف الحجز، رابط الحجز الالكتروني، ومواعيد الدوام." />
+  <meta name="keywords" content="عيادة السن الرقمي, حجز مواعيد, طبيب, واتساب, contact, Younes Nour" />
+  <link rel="canonical" href="https://younesnour.github.io/" />
+
+  <!-- JSON-LD structured data (LocalBusiness / MedicalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "عيادة السن الرقمي",
+    "url": "https://younesnour.github.io/",
+    "telephone": "+966595908081",
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+966595908081",
+        "contactType": "reservations",
+        "areaServed": "SA"
+      },
+      {
+        "@type": "ContactPoint",
+        "telephone": "+966534741662",
+        "contactType": "customer service",
+        "areaServed": "SA"
+      }
+    ],
+    "sameAs": [
+      "https://maps.app.goo.gl/3jiDXtgJYsn3nbrE7",
+      "https://digitaltclinic.kizensoft.com/bookAppointment"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "http://schema.org/Saturday",
+          "http://schema.org/Sunday",
+          "http://schema.org/Monday",
+          "http://schema.org/Tuesday",
+          "http://schema.org/Wednesday"
+        ],
+        "opens": "14:00",
+        "closes": "22:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Thursday",
+        "opens": "09:00",
+        "closes": "12:00"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "http://schema.org/Thursday",
+        "opens": "13:00",
+        "closes": "17:00"
+      }
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "مكان العيادة (أضف المدينة إذا رغبت)"
+    }
+  }
+  </script>
 
   <style>
-    body{font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0; padding:20px; background:#f7f7f8; color:#111}
-    .card{max-width:760px;margin:40px auto;padding:28px;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,0.06)}
-    h1{margin:0 0 8px;font-size:28px}
-    p{margin:8px 0;font-size:16px}
-    .big{font-size:20px;font-weight:700}
-    .muted{color:#555}
-    .actions{margin-top:18px}
-    a.btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;border:1px solid #e0e0e0}
+    :root{--max:880px}
+    body{font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial; margin:0;background:#f3f4f6;color:#0b0b0b;line-height:1.45}
+    .wrap{max-width:var(--max);margin:36px auto;padding:20px}
+    .card{background:#fff;padding:26px;border-radius:12px;box-shadow:0 10px 30px rgba(2,6,23,0.06)}
+    h1{margin:0 0 8px;font-size:26px}
+    p{margin:8px 0}
+    .muted{color:#556}
+    .contact-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+    .pill{display:inline-flex;align-items:center;padding:10px 14px;border-radius:10px;border:1px solid #e6e6e9;text-decoration:none;color:inherit}
+    .btn-green{background:#e6ffef}
+    .small{font-size:14px}
+    footer{margin-top:18px;color:#666;font-size:13px}
+    @media (max-width:600px){.contact-row{flex-direction:column;align-items:stretch}}
+    a{color:inherit}
   </style>
 </head>
 <body>
-  <main class="card" role="main">
-    <h1>مرحباً — يونس نور</h1>
-    <p class="muted">هذه صفحة التواصل السريع الخاصة بي. أستخدمها لعرض اسمي ورقم جوالي علنياً.</p>
+  <div class="wrap">
+    <main class="card" role="main">
+      <h1>عيادة السن الرقمي</h1>
+      <p class="muted">معلومات التواصل وحجز المواعيد الرسمية</p>
 
-    <section aria-labelledby="contact">
-      <h2 id="contact" class="big">للتواصل المباشر</h2>
+      <section aria-labelledby="contact">
+        <h2 id="contact">للتواصل السريع</h2>
 
-      <p>📞 <strong>الجوال:</strong> <span id="phone">+966534741662</span></p>
+        <div class="contact-row">
+          <div>
+            <p class="small"><strong>📞 رقم حجز المواعيد:</strong></p>
+            <p><a class="pill" href="tel:+966595908081">059 590 8081 — اتصل للحجز</a></p>
+          </div>
 
-      <p>💬 <strong>واتساب:</strong> افتح المحادثة مباشرة:</p>
+          <div>
+            <p class="small"><strong>💬 واتساب الطبيب:</strong></p>
+            <p>
+              <a class="pill btn-green" href="https://wa.me/966534741662" target="_blank" rel="noopener">
+                افتح محادثة واتساب — 053 474 1662
+              </a>
+            </p>
+          </div>
 
-      <p class="actions">
-        <a class="btn" id="whatsapp" href="https://wa.me/00966595908081 " target="_blank" rel="noopener">افتح واتساب</a>
-        <a class="btn" id="call" href="tel:+966595908081">اتصال مباشر</a>
-      </p>
+          <div>
+            <p class="small"><strong>📧 الإيميل:</strong></p>
+            <p><a class="pill" href="mailto:younesnour@hotmail.com">younesnour@hotmail.com</a></p>
+          </div>
+        </div>
 
-      <p>📧 <strong>البريد:</strong> <a href="mailto:younesnour@hotmail.com ">example@email.com</a></p>
-    </section>
+        <hr>
 
-    <hr>
+        <h3>حجز مواعيد أونلاين</h3>
+        <p>للحجز الذاتي عبر النظام الإلكتروني:</p>
+        <p>
+          <a class="pill" href="https://digitaltclinic.kizensoft.com/bookAppointment" target="_blank" rel="noopener">
+            احجز موعدك الآن
+          </a>
+        </p>
 
-    <section aria-labelledby="about">
-      <h3 id="about">نبذة سريعة</h3>
-      <p class="muted">أنا متاح للرد على الرسائل حول الخدمات، التعاون، والاستفسارات.</p>
-    </section>
+        <hr>
 
-    <footer style="margin-top:20px;font-size:13px;color:#777">
-      تم إنشاء هذه الصفحة بواسطة GitHub Pages — يمكنك تعديلها بسهولة.
-    </footer>
-  </main>
+        <h3>موقع العيادة على الخريطة</h3>
+        <p>
+          <a class="pill" href="https://maps.app.goo.gl/3jiDXtgJYsn3nbrE7" target="_blank" rel="noopener">
+            موقع عيادة السن الرقمي (فتح في الخرائط)
+          </a>
+        </p>
+
+        <hr>
+
+        <h3>أوقات الدوام</h3>
+        <p class="small"><strong>السبت — الأربعاء:</strong> من 2:00 م حتى 10:00 م</p>
+        <p class="small"><strong>الخميس:</strong> من 9:00 ص حتى 12:00 م — ثم من 1:00 م حتى 5:00 م</p>
+      </section>
+
+      <footer>
+        <p class="muted">تم إعداد هذه الصفحة من قِبل فريق / بواسطة يونس نور — يمكنك تعديل المعلومات في أي وقت من خلال مستودع GitHub.</p>
+      </footer>
+    </main>
+  </div>
 </body>
 </html>
