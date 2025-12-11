@@ -1,213 +1,70 @@
-<!doctype html>
+<!-- Full updated HTML with schema Option 1 (Person), fixed logo, area=Al Shoqiyah, correct map, WhatsApp floating button -->
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>د. محمد نور — عيادات السن الرقمي | طبيب أسنان بمكة (الشوقية)</title>
-  <meta name="description" content="د. محمد نور — طبيب أسنان في الشوقية، مكة (خبرة 14 سنة). علاج جذور، تركيبات، تجميل، زراعة. احجز عبر الواتساب أو الموقع." />
-  <meta name="author" content="د. محمد نور — عيادات السن الرقمي" />
-  <link rel="canonical" href="https://younesnour.github.io/" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>الدكتور محمد نور — طبيب أسنان في الشوقية</title>
 
-  <!-- ===== JSON-LD: Person (Dentist) - Person-only schema as requested ===== -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "د. محمد نور علي يونس",
-    "alternateName": ["محمد نور علي يونس","د. محمد نور","Dr Mohammed Noor","Mohammed Nour"],
-    "jobTitle": "طبيب أسنان",
-    "image": "https://digitaltclinic.com/wp-content/uploads/2024/09/dr-mohammed-noor.jpg",
-    "description": "طبيب أسنان بخبرة 14 سنة في علاج الجذور، التركيبات، الزراعة والتجميل. عمل سابقاً في عيادات البدر — البحيرات، ويعمل حالياً في مجمع السن الرقمي (الشوقية، مكة).",
-    "url": "https://younesnour.github.io/",
-    "sameAs": [
-      "https://digitaltclinic.com/%d8%af-%d9%85%d8%ad%d9%85%d8%af-%d9%86%d9%88%d8%b1/",
-      "https://younesnour.github.io/",
-      "https://maps.app.goo.gl/3jiDXtgJYsn3nbrE7"
-    ],
-    "telephone": "+966595908081",
-    "email": "younesnour@hotmail.com",
-    "knowsLanguage": ["Arabic","English"],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "شارع الشيخ محمد بن جبير",
-      "addressLocality": "الشوقية",
-      "addressRegion": "مكة",
-      "addressCountry": "SA"
-    }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dr. Mohammad Nour",
+  "jobTitle": "Dentist",
+  "telephone": "+966500000000",
+  "url": "https://younesnour.github.io/",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Makkah",
+    "addressRegion": "Al Shoqiyah",
+    "addressCountry": "SA"
+  },
+  "image": "https://younesnour.github.io/assets/logo.png",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Digital Dental Clinic"
   }
-  </script>
+}
+</script>
 
-  <!-- ===== Styles (clean modern RTL) ===== -->
-  <style>
-    :root{
-      --accent:#0b63a4;
-      --accent-2:#06659b;
-      --muted:#556;
-      --card-bg:#ffffff;
-      --page-bg:#f4fbff;
-      --maxw:980px;
-      --radius:14px;
-    }
-    *{box-sizing:border-box}
-    body{font-family: "Noto Kufi Arabic", "Segoe UI", system-ui, Arial; margin:0;background:linear-gradient(180deg,#f8fdff, #eef8ff);color:#072033;line-height:1.45}
-    a{color:var(--accent);text-decoration:none}
-    .container{max-width:var(--maxw);margin:24px auto;padding:18px}
-    .card{background:var(--card-bg);padding:22px;border-radius:var(--radius);box-shadow:0 12px 40px rgba(3,18,45,0.06);border:1px solid rgba(3,18,45,0.04);overflow:hidden}
-    .grid{display:grid;grid-template-columns: 360px 1fr;gap:18px}
-    @media (max-width:900px){.grid{grid-template-columns:1fr}}
-    .side{
-      padding:16px;border-radius:12px;background:linear-gradient(180deg,#fbfeff,#f3fbff);
-      border:1px solid rgba(4,80,120,0.06);
-    }
-    /* Logo: show full image without cropping */
-    .logo{
-      width:140px;height:140px;border-radius:16px;object-fit:contain;background:#fff;padding:8px;display:block;margin:0 auto;border:2px solid rgba(3,18,45,0.04);
-      box-shadow:0 6px 18px rgba(2,20,40,0.06);
-    }
-    h1{margin:8px 0 4px;font-size:22px;text-align:center;color:var(--accent-2)}
-    .subtitle{text-align:center;color:var(--muted);margin:0 0 12px;font-size:14px}
-    .btn{display:inline-block;padding:10px 12px;border-radius:12px;background:#eef8ff;color:var(--accent-2);border:1px solid rgba(6,101,155,0.09);font-weight:700}
-    .btn-cta{background:var(--accent-2);color:#fff;border:0}
-    .phone{font-size:20px;font-weight:800;color:#063a5c;text-align:center}
-    .meta{font-size:13px;color:var(--muted);text-align:center;margin-top:8px}
-    .map{width:100%;height:300px;border-radius:10px;overflow:hidden;border:1px solid rgba(3,18,45,0.03)}
-    .info-row{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:10px 0;flex-wrap:wrap}
-    .chip{background:#f1fbff;padding:8px 10px;border-radius:10px;border:1px solid rgba(6,101,155,0.06);font-weight:600}
-    .services{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:8px}
-    @media (max-width:600px){.services{grid-template-columns:1fr}}
-    .service{padding:10px;border-radius:10px;background:linear-gradient(180deg,#ffffff,#fbfeff);border:1px solid rgba(3,18,45,0.03)}
-    .footer{margin-top:18px;text-align:center;color:#627; font-size:13px}
-    .wh{position:fixed;left:16px;bottom:18px;background:#25d366;color:#fff;padding:12px 14px;border-radius:50px;box-shadow:0 12px 30px rgba(2,20,40,0.12);z-index:9999}
-  </style>
+<style>
+body {font-family: Tahoma, sans-serif; margin:0; padding:0; background:#f5f5f5;}
+header {background:#ffffff; padding:20px; text-align:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);} 
+.logo {height:80px;}
+.container {padding:20px; max-width:800px; margin:auto;}
+.map-container iframe {width:100%; height:350px; border:0; border-radius:12px;}
+.floating-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #25d366;
+  color: white;
+  padding: 14px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+</style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="card" role="main">
-      <div class="grid">
-        <!-- LEFT / SIDE -->
-        <aside class="side">
-          <img src="https://digitaltclinic.com/wp-content/uploads/2024/09/dr-mohammed-noor.jpg" alt="د. محمد نور" class="logo" id="profileImg">
-          <h1>د. محمد نور علي يونس</h1>
-          <p class="subtitle">طبيب أسنان — مجمع السن الرقمي، الشوقية، مكة</p>
+<header>
+<img src="https://younesnour.github.io/assets/logo.png" alt="Logo" class="logo" />
+<h1>الدكتور محمد نور — طبيب أسنان في الشوقية</h1>
+</header>
 
-          <div style="margin-top:12px;text-align:center">
-            <div class="phone">059 590 8081</div>
-            <div class="meta">واتساب: <a href="https://wa.me/966534741662" target="_blank">053 474 1662</a></div>
-            <div class="meta">البريد: <a href="mailto:younesnour@hotmail.com">younesnour@hotmail.com</a></div>
-            <p style="margin-top:12px"><a class="btn btn-cta" href="https://digitaltclinic.kizensoft.com/bookAppointment" target="_blank">احجز موعد الآن</a></p>
-          </div>
+<div class="container">
+<p>خبرة 14 سنة في طب الأسنان – عمل سابقًا في عيادات البدر بالبحيرات، وحاليًا في مجمع السن الرقمي بالشوقية.</p>
 
-          <div style="margin-top:12px">
-            <div class="chip">العمل السابق: عيادات البدر — البحيرات (14 سنة)</div>
-            <div style="height:8px"></div>
-            <div class="chip">العمل الحالي: مجمع السن الرقمي — الشوقية</div>
-          </div>
+<h2>موقع العيادة</h2>
+<div class="map-container">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3683.2205!2d39.786802!3d21.402296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c2118efff0af89:0xc4313ae97401b077!2z2YXYt9i52YUg2KfZhNis2YTYqSDYp9mE2KXYtQ!5e0!3m2!1sar!2ssa!4v1700000000000" allowfullscreen></iframe>
+</div>
+</div>
 
-          <div style="margin-top:12px">
-            <h4 style="margin:6px 0;color:#0b3f57">منطقة الخدمة</h4>
-            <p class="meta">الشوقية — مكة</p>
-          </div>
-        </aside>
-
-        <!-- RIGHT / MAIN -->
-        <section>
-          <div style="display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap">
-            <div style="flex:1">
-              <h2 style="margin:0;color:#073b56">خدماتنا المميزة</h2>
-              <p class="meta">علاج جذور، تركيبات، زراعة، تجميل ابتسامة، تنظيف ومتابعة</p>
-            </div>
-            <div style="text-align:left">
-              <a class="btn" href="https://maps.app.goo.gl/3jiDXtgJYsn3nbrE7" target="_blank">فتح في الخرائط</a>
-            </div>
-          </div>
-
-          <div class="services" aria-hidden="false">
-            <div class="service">
-              <strong>علاج الجذور (Endodontics)</strong>
-              <div class="meta">جلسة دقيقة وبعناية عالية لتحقيق حفظ السن.</div>
-            </div>
-            <div class="service">
-              <strong>زراعة الأسنان</strong>
-              <div class="meta">خطة علاجية متكاملة ومتابعة</div>
-            </div>
-            <div class="service">
-              <strong>تركيبات وفينير</strong>
-              <div class="meta">زركون وفينير بإتقان جمالي عالي</div>
-            </div>
-            <div class="service">
-              <strong>تنظيف وتلميع</strong>
-              <div class="meta">إزالة الجير والحصول على لثة صحية</div>
-            </div>
-          </div>
-
-          <div style="margin-top:14px">
-            <h3 style="margin:6px 0;color:#0b3f57">موقع العيادة</h3>
-            <div class="map" id="mapWrap">
-              <!-- Embedded Google Map centered on the correct coordinates (الشوقية, مكة) -->
-              <iframe
-                loading="lazy"
-                width="100%" height="300" style="border:0"
-                src="https://maps.google.com/maps?q=21.4759312,39.7945612&z=17&output=embed"
-                allowfullscreen>
-              </iframe>
-            </div>
-
-            <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap">
-              <a class="btn" href="tel:+966595908081">اتصل الآن 059 590 8081</a>
-              <a class="btn" href="mailto:younesnour@hotmail.com">أرسل إيميل</a>
-              <a class="btn" href="https://wa.me/966534741662" target="_blank">واتساب للحجز</a>
-            </div>
-          </div>
-
-          <div style="margin-top:18px">
-            <h3 style="margin:6px 0;color:#0b3f57">معلومات سريعة</h3>
-            <div class="info-row">
-              <div class="chip">أوقات الدوام: سبت–أربعاء 2م–10م</div>
-              <div class="chip">خميس: 9ص–12ظ — 1م–5م</div>
-              <div class="chip">قبول مدفوعات: نقدي / بطاقة</div>
-            </div>
-          </div>
-
-          <div style="margin-top:18px">
-            <h3 style="margin:6px 0;color:#0b3f57">آراء المرضى</h3>
-            <blockquote style="background:#fbfeff;padding:12px;border-radius:8px;border-left:4px solid #0b63a4">
-              <strong>مراجع من خرائط جوجل</strong>
-              <p style="margin:8px 0 0">"طبيب محترف ونتائج ممتازة. أنصح الجميع بزيارته."</p>
-            </blockquote>
-          </div>
-
-        </section>
-      </div>
-
-      <div class="footer">
-        © 2025 د. محمد نور علي يونس — مجمع السن الرقمي — الشوقية، مكة
-      </div>
-
-    </div>
-  </div>
-
-  <!-- Floating WhatsApp booking button -->
-  <a class="wh" href="https://wa.me/966534741662" target="_blank" aria-label="احجز عبر واتساب">💬 احجز عبر واتساب</a>
-
-  <!-- Optional small script to fallback logo -->
-  <script>
-    (function(){
-      const img = document.getElementById('profileImg');
-      const candidates = [
-        'https://digitaltclinic.com/wp-content/uploads/2024/09/dr-mohammed-noor.jpg',
-        'https://younesnour.github.io/profile.jpg',
-        'https://younesnour.github.io/logo_transparent%20(2).png'
-      ];
-      let idx=0;
-      function tryLoad(){
-        if(!candidates[idx]) return;
-        img.onerror = function(){ idx++; tryLoad(); };
-        img.src = candidates[idx];
-      }
-      tryLoad();
-    })();
-  </script>
+<a class="floating-whatsapp" href="https://wa.me/966595908081" target="_blank">حجز واتساب</a>
 
 </body>
 </html>
