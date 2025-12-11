@@ -3,12 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>د. محمد نور — عيادات السن الرقمي | طبيب أسنان بمكة (الشوقية)</title>
-  <meta name="description" content="د. محمد نور — طبيب أسنان في الشوقية، مكة (خبرة 14 سنة). علاج جذور، تركيبات، تجميل، زراعة. احجز عبر الواتساب أو الموقع." />
+
+  <!-- ================= UPDATED SEO TITLE + DESCRIPTION ================= -->
+  <title>د. محمد نور – طبيب أسنان في مكة | عيادات السن الرقمي الشوقية</title>
+
+  <meta name="description"
+    content="د. محمد نور، طبيب أسنان في الشوقية مكة بخبرة 14 سنة. متخصص في علاج الجذور، التركيبات، الزراعة، التجميل، وتنظيف الأسنان. احجز موعدك الآن بسهولة عبر واتساب أو الموقع." />
+
   <meta name="author" content="د. محمد نور — عيادات السن الرقمي" />
   <link rel="canonical" href="https://younesnour.github.io/" />
 
-  <!-- ===== JSON-LD: Person (Dentist) - Person-only schema as requested ===== -->
+  <!-- ===== JSON-LD: Person Schema ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,7 +42,7 @@
   }
   </script>
 
-  <!-- ===== Styles (clean modern RTL) ===== -->
+  <!-- ===== Styles ===== -->
   <style>
     :root{
       --accent:#0b63a4;
@@ -49,7 +54,7 @@
       --radius:14px;
     }
     *{box-sizing:border-box}
-    body{font-family: "Noto Kufi Arabic", "Segoe UI", system-ui, Arial; margin:0;background:linear-gradient(180deg,#f8fdff, #eef8ff);color:#072033;line-height:1.45}
+    body{font-family: "Noto Kufi Arabic", "Segoe UI", system-ui, Arial; margin:0;background:linear-gradient(180deg,#f8fdff,#eef8ff);color:#072033;line-height:1.45}
     a{color:var(--accent);text-decoration:none}
     .container{max-width:var(--maxw);margin:24px auto;padding:18px}
     .card{background:var(--card-bg);padding:22px;border-radius:var(--radius);box-shadow:0 12px 40px rgba(3,18,45,0.06);border:1px solid rgba(3,18,45,0.04);overflow:hidden}
@@ -59,7 +64,6 @@
       padding:16px;border-radius:12px;background:linear-gradient(180deg,#fbfeff,#f3fbff);
       border:1px solid rgba(4,80,120,0.06);
     }
-    /* Logo: show full image without cropping */
     .logo{
       width:140px;height:140px;border-radius:16px;object-fit:contain;background:#fff;padding:8px;display:block;margin:0 auto;border:2px solid rgba(3,18,45,0.04);
       box-shadow:0 6px 18px rgba(2,20,40,0.06);
@@ -85,6 +89,7 @@
   <div class="container">
     <div class="card" role="main">
       <div class="grid">
+
         <!-- LEFT / SIDE -->
         <aside class="side">
           <img src="https://digitaltclinic.com/wp-content/uploads/2024/09/dr-mohammed-noor.jpg" alt="د. محمد نور" class="logo" id="profileImg">
@@ -122,7 +127,7 @@
             </div>
           </div>
 
-          <div class="services" aria-hidden="false">
+          <div class="services">
             <div class="service">
               <strong>علاج الجذور (Endodontics)</strong>
               <div class="meta">جلسة دقيقة وبعناية عالية لتحقيق حفظ السن.</div>
@@ -143,8 +148,7 @@
 
           <div style="margin-top:14px">
             <h3 style="margin:6px 0;color:#0b3f57">موقع العيادة</h3>
-            <div class="map" id="mapWrap">
-              <!-- Embedded Google Map centered on the correct coordinates (الشوقية, مكة) -->
+            <div class="map">
               <iframe
                 loading="lazy"
                 width="100%" height="300" style="border:0"
@@ -187,10 +191,9 @@
     </div>
   </div>
 
-  <!-- Floating WhatsApp booking button -->
-  <a class="wh" href="https://wa.me/966595908081" target="_blank" aria-label="احجز عبر واتساب">💬 احجز عبر واتساب</a>
+  <!-- Floating WhatsApp Button -->
+  <a class="wh" href="https://wa.me/966595908081" target="_blank">💬 احجز عبر واتساب</a>
 
-  <!-- Optional small script to fallback logo -->
   <script>
     (function(){
       const img = document.getElementById('profileImg');
